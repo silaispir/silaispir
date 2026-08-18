@@ -8,7 +8,7 @@
   <img src="https://komarev.com/ghpvc/?username=silaispir&label=Ziyaret%C3%A7i&color=ff69b4&style=for-the-badge" alt="Profil ziyaretleri" />
 </p>
 
-## ✦ Hakkımda
+<p align="center"><img src="./assets/title-about.svg" width="100%" alt="Hakkımda" /></p>
 
 ```javascript
 const sila = {
@@ -20,18 +20,18 @@ const sila = {
 };
 ```
 
-## ✦ Teknoloji Alanım
+<p align="center"><img src="./assets/title-tech.svg" width="100%" alt="Teknoloji Alanım" /></p>
 
 <p align="center"><img src="https://skillicons.dev/icons?i=python,java,cs,js,html,css,react,nodejs,git,github,vscode&perline=11" alt="Teknolojiler" /></p>
 
-## ✦ GitHub İstatistikleri
+<p align="center"><img src="./assets/title-stats.svg" width="100%" alt="GitHub İstatistikleri" /></p>
 
 <p align="center">
   <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=silaispir&theme=radical" alt="GitHub istatistikleri" />
   <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=silaispir&theme=radical" alt="Repository dilleri" />
 </p>
 
-## ✦ Katkı Animasyonu
+<p align="center"><img src="./assets/title-contributions.svg" width="100%" alt="Katkı Animasyonu" /></p>
 
 <p align="center">
   <picture>
@@ -40,5 +40,7 @@ const sila = {
     <img alt="Sıla İspir katkı animasyonu" src="https://raw.githubusercontent.com/silaispir/silaispir/output/github-snake.svg" />
   </picture>
 </p>
+
+<p align="center"><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=silaispir&theme=radical" width="100%" alt="Katkı özeti" /></p>
 
 <p align="center"><i>build • learn • improve • repeat</i></p>

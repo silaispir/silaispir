@@ -27,8 +27,8 @@ const sila = {
 ## ✦ GitHub İstatistikleri
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=silaispir&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub istatistikleri" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=silaispir&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="En çok kullanılan diller" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=silaispir&theme=radical" alt="GitHub istatistikleri" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=silaispir&theme=radical" alt="Repository dilleri" />
 </p>
 
 ## ✦ Katkı Animasyonu

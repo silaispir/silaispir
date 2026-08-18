@@ -35,9 +35,9 @@ const sila = {
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/silaispir/silaispir/output/github-snake.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/silaispir/silaispir/output/github-snake.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/silaispir/silaispir/output/github-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/silaispir/silaispir/refs/heads/gh-pages/github-snake.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/silaispir/silaispir/refs/heads/gh-pages/github-snake.svg" />
+    <img alt="" src="https://raw.githubusercontent.com/silaispir/silaispir/refs/heads/gh-pages/github-snake.svg" />
   </picture>
 </p>
 

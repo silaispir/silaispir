@@ -1,0 +1,23 @@
+name: Generate contribution snake
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: silaispir
+          outputs: dist/github-snake.svg?color_snake=%23ff69b4&color_dots=%23120b14,%234a1736,%238e2862,%23d94691,%23ff85c2
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          build_dir: dist
+          branch: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

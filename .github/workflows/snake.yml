@@ -1,23 +1,34 @@
 name: Generate contribution snake
 on:
   schedule:
-    - cron: "0 0 * * *"
+    # Refresh after the daily journal (21:17 Europe/Istanbul).
+    - cron: "47 18 * * *"
   workflow_dispatch:
   push:
     branches: [main]
 permissions:
   contents: write
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: Platane/snk/svg-only@v3
+      - name: Generate pink contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: silaispir
-          outputs: dist/github-snake.svg?color_snake=%23ff69b4&color_dots=%23120b14,%234a1736,%238e2862,%23d94691,%23ff85c2
-      - uses: crazy-max/ghaction-github-pages@v4
+          outputs: |
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%23ff69b4&color_dots=%23161b22,%234a1736,%238e2862,%23d94691,%23ff85c2
+            dist/github-snake.svg?palette=github-light&color_snake=%23db2777&color_dots=%23f3e8ef,%23fbcfe8,%23f9a8d4,%23ec4899,%23be185d
+      - name: Publish profile animations
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
         with:
           build_dir: dist
-          branch: output
+          target_branch: gh-pages
+          keep_history: true
+          allow_empty_commit: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
